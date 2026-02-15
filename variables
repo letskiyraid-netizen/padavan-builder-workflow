@@ -1,17 +1,22 @@
-PADAVAN_REPO="https://gitlab.com/hadzhioglu/padavan-ng.git"
+PADAVAN_REPO="https://gitlab.com/dm38/padavan-ng.git"
 PADAVAN_BRANCH="master"
 PADAVAN_COMMIT="HEAD"
-PADAVAN_TOOLCHAIN_URL="https://gitlab.com/api/v4/projects/hadzhioglu%2Fpadavan-ng/packages/generic/toolchain/latest/toolchain.tzst"
+PADAVAN_TOOLCHAIN_URL="https://gitlab.com/dm38/toolchain-mt7621/-/jobs/artifacts/master/raw/toolchain-mt7621.tar.xz?job=build"
 
-PADAVAN_THEMES_REPO="https://gitlab.com/hadzhioglu/padavan-themes.git"
-#PADAVAN_THEMES_REPO="https://gitlab.com/hadzhioglu/padavan-themes-lite.git"
+PADAVAN_THEMES_REPO="https://gitlab.com/dm38/padavan-ng-themes.git"
 PADAVAN_THEMES_BRANCH="main"
 
 PADAVAN_THEMES=(
-#  blue
-#  blue2
-#  grey
-#  grey2
-#  white
-#  yellow
+  # blue
+  # blue2
+  # grey
+  # grey2
+  # white
+  # yellow
 )
+
+# Твои настройки для модели (можно добавить сюда, если workflow их читает)
+MODEL=NEWIFI-D2
+FW_LANG=ru
+ENABLE_AIO=0   # 0 — чтобы размер прошёл проверку; потом попробуешь 1
+FW_BUILD=_dm38_github
